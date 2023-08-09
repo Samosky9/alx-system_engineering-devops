@@ -1,2 +1,2 @@
 #!/bin/bash
-print(f"Number of directories in PATH: {num_directories}") 
+printf "(Number of directories in PATH: {num_directories})"
