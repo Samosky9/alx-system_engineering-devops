@@ -41,7 +41,7 @@ frontend samosky-frontend
         default_backend samosky-backend
 
 frontend samosky-frontend-https
-        bind *:443 ssl crt  /etc/letsencrypt/live/www.samosky.tech/www.samosky.tech.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.samosky.tech/www.samosky.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend samosky-backend
 
