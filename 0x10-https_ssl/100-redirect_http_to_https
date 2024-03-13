@@ -29,9 +29,6 @@ defaults
         errorfile 403 /etc/haproxy/errors/403.http
         errorfile 408 /etc/haproxy/errors/408.http
         errorfile 500 /etc/haproxy/errors/500.http
-        errorfile 502 /etc/haproxy/errors/502.http
-        errorfile 503 /etc/haproxy/errors/503.http
-        errorfile 504 /etc/haproxy/errors/504.http
 
 frontend samosky-frontend
         bind *:80
@@ -49,3 +46,4 @@ backend samosky-backend
         balance roundrobin
         server 504223-web-01 52.91.118.128:80 check
         server 504223-web-02 54.197.89.146:80 check
+
